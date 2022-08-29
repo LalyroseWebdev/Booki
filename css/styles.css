@@ -1,0 +1,670 @@
+/* Booki General Stylesheet (general & desktop) */
+/* Author Chloé Lalyrose Domergue */
+/* Date 08/2022 */
+
+
+/* ====================
+    Table of Contents
+   ====================
+
+    A- Fonts
+    B- General
+        B1- General styles
+        B2- Default font sizes
+        B3- Card model
+    C- Header
+    D- Title + Search bar
+        D1- Location icon
+        D2- Search input
+        D3- Search button
+    E- Filters section
+        E1- Filters 
+        E3- Information line
+    F- Housing display
+    G- Most populars
+    H- General housing
+    I- Activities
+    J- Footer
+*/
+
+
+/* ===============
+    A- Fonts
+   =============== */
+
+
+/* Raleway normal */
+@font-face {
+    font-family: "Raleway";
+    src: url("./font/Raleway-Regular.woff2") format("woff2"),
+         url("./font/Raleway-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Raleway bold */
+@font-face {
+    font-family: "Raleway";
+    src: url("./font/Raleway-Bold.woff2") format("woff2"),
+         url("./font/Raleway-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* ===============
+    B- General
+   =============== */
+
+/* ===== B1- General styles ===== */
+
+/* Border-box + Font-family */
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+/* Body display */
+body {
+    margin: 0 auto;
+    max-width: 2000px;
+}
+
+/* General padding */
+header, main, footer {
+    padding: 0 30px;
+}
+
+/* Input wrap */
+input {
+    overflow-wrap: break-word;
+}
+
+/* Images max-width */
+img {
+    max-width: 100%;
+}
+
+/* Headers margins */
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* Neutral lists */
+ul {
+    list-style-type: none;
+}
+
+/* Neutral links */
+a {
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+}
+
+/* Links focus effect */
+a:focus {
+    outline: 5px solid #0065FC;
+}
+a:focus:not(:focus-visible) {
+    outline: 0 solid #0065FC;
+}
+
+/* ===== B2- Default font sizes ===== */
+
+h1 {
+    font-size: 20pt;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+h3, p, span, a, input, button {
+    font-size: 14pt;
+}
+
+/* ======= B3- Card model ======= */
+
+/* Card */
+.card {
+    display: flex;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Image container */
+.card-img {
+    overflow: hidden;
+}
+
+/* Image */
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Left image radius */
+.img-left {
+    border-radius: 20px 0 0 20px;
+}
+
+/* Top image radius */
+.img-top {
+    border-radius: 20px 20px 0 0;
+}
+
+/* Body */
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card description */
+.card-description {
+    margin: 10px 0;
+    font-size: 12pt;
+}
+
+/* Rating stars */
+.card-rating {
+    display: flex;
+    gap: 1px;
+    margin-top: auto;
+    font-size: 10pt;
+}
+
+/* Filled star */
+.star-on {
+    color: #0065FC;
+}
+
+/* Empty star */
+.star-off {
+    color: #F2F2F2;
+}
+
+/* Hover & focus effect */
+.card:hover .card-heading,
+.card:focus .card-heading {
+    color: #0065FC;
+}
+
+
+/* ===============
+    C- Header
+   =============== */
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Logo */
+.logo {
+    margin-left: 20px;
+    height: 65px;
+}
+
+nav {
+    text-align: center;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation link */
+.nav-link {
+    display: block;
+    padding: 50px 40px;
+}
+
+/* Hover & focus effect */
+.nav-link:hover,
+.nav-link:focus {
+    border-top: 3px solid #0065FC;
+    padding-top: 47px;
+    color: #0065FC;
+}
+
+/* =======================
+    D- Title + Search bar
+   ======================= */
+
+/* Search & Filters section */
+.search-filters-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px 20px 5px;
+}
+
+/* Page title subhead */
+.subhead {
+    margin-top: 10px;
+}
+
+/* Search form */
+.search-form {
+    display: flex;
+    margin: 15px 0 20px 0;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+/* ======= D1- Location icon ======= */
+
+/* Location dot icon */
+.location-icon {
+    border-radius: 15px 0 0 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #F2F2F2;
+}
+
+/* ======= D2- Search input ======= */
+
+/* Input */
+.search-input {
+    border: none;
+    padding-left: 15px; 
+    font-weight: bold;
+}
+
+/* Placeholder */
+.search-input::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+/* Outline focus effect */
+.search-input:focus {
+    outline: 4px solid #0065FC;
+    outline-offset: -3px;
+}
+
+/* Color hover & focus effect */
+.search-input:hover::placeholder,
+.search-input:focus::placeholder {
+    color: #F2F2F2;
+}
+
+/* ======= D3- Search button ======= */
+
+/* Text button */
+.search-btn-text {
+    border: none;
+    border-radius: 0 15px 15px 0;
+    padding: 0 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #0065FC;
+    outline: 2px solid #0065FC;
+    outline-offset: -1px;
+}
+
+/* Icon button */
+.search-btn-icon {
+    display: none;
+}
+
+/* Button focus effect */
+.search-btn-text:focus,
+.search-btn-icon:focus {
+    color: #0065FC;
+    background-color: white;
+    outline: 5px solid #0065FC;
+    outline-offset: -4px;
+}
+.search-btn-text:focus:not(:focus-visible),
+.search-btn-icon:focus:not(:focus-visible) {
+    color: white;
+    background-color: #0065FC;
+    outline: 2px solid #0065FC;
+    outline-offset: -1px;
+}
+
+/* ====================
+    E- Filters section
+   ==================== */
+
+/* ======= E1- Filters ======= */
+
+/* Filters section */
+.filters-section {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+/* Filters list */
+.filters-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* Filter */
+.filter {
+    display: flex;
+    align-items: center;
+    border: 3px solid #F2F2F2;
+    border-radius: 50px;
+}
+
+/* Icon */
+.filter-icon {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    outline: 3px solid #DEEBFF;
+}
+
+/* Label */
+.filter-label {
+    padding-left: 15px;
+    padding-right: 25px;
+    font-weight: bold;
+}
+
+/* Hover & focus effect */
+.filter:hover .filter-label,
+.filter:focus .filter-label {
+    color: #0065FC;
+}
+
+/* ======= E2- Information line ======= */
+
+/* Results information line */
+.results-info {
+    display: flex;
+    align-items: center;
+    margin: 20px 5px;
+}
+
+/* Icon */
+.info-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 15px;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: #0065FC;
+}
+
+
+/* ====================
+    F- Housing display
+   ==================== */
+
+/* Housing */
+.housing-section {
+    display: flex;
+    gap: 3%;
+}
+
+/* Most populars subsection */
+.most-populars-subsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 1;
+    border-radius: 30px;
+    padding: 40px;
+    width: 32%;
+    background-color: #F2F2F2;
+}
+
+/* General housing subsection */
+.general-housing-subsection {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 40px;
+    width: 65%;
+    background-color: #F2F2F2;
+}
+
+
+/* ==================
+    G- Most populars
+   ================== */
+
+/* Heading */
+.pop-heading {
+    display: flex;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+/* Heading star */
+.pop-star {
+    margin-left: auto;
+    font-size: 22px;
+}
+
+/* Most populars cards */
+.pop-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Card */
+.pop-card {
+    height: 180px;
+}
+
+/* Image container */
+.pop-img {
+    width: 40%;
+    outline: 5px solid white;
+    outline-offset: -5px;
+}
+
+/* Image */
+.pop-img img {
+    padding: 1px;
+}
+
+/* Card body */
+.pop-body {
+    padding: 15px 20px;
+    width: 60%;
+}
+
+
+/* ====================
+    H- General housing
+   ==================== */
+
+/* Heading */
+.gen-heading {
+    margin-bottom: 30px;
+}
+
+/* Main housing cards */
+.gen-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Line */
+.gen-block {
+    display: flex;
+    gap: 4%;
+}
+
+/* Article */
+.gen-article {
+    width: 32%;
+}
+
+/* Card */
+.gen-card {
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Image container */
+.gen-img {
+    height: 130px;
+    outline: 5px solid white;
+    outline-offset: -5px;
+}
+
+/* Image */
+.gen-img img {
+    padding: 1px;
+}
+
+/* Card body */
+.gen-body {
+    flex-grow: 1;
+    padding: 10px 20px 15px 20px;
+}
+
+/* More link container */
+.more-link {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* More link */
+.more-link a {
+    padding: 10px;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+/* Hover & focus effect */
+.more-link a:hover,
+.more-link a:focus {
+    color: #0065FC; 
+}
+
+
+/* ===============
+    I- Activities
+   =============== */
+
+/* Activities section */
+.activities-section {
+    margin-top: 40px;
+}
+
+/* Heading */
+.act-heading {
+    margin-bottom: 30px;
+}
+
+/* Activities cards */
+.act-cards {
+    display: flex;
+    gap: 4%;
+    height: 500px;
+}
+
+/* Column */
+.act-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+    width: 22%;
+}
+
+/* Large cards height */
+.card-lg {
+    height: 100%;
+}
+
+/* Medium cards height */
+.card-md {
+    height: 52%;
+}
+
+/* Small cards height */
+.card-sm {
+    height: 40%;
+}
+
+/* Card */
+.act-card {
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Image container */
+.act-img {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Card body */
+.act-body {
+    padding: 20px;
+}
+
+
+/* ===============
+    J- Footer
+   =============== */
+
+/* Footer */
+footer {
+    display: flex;
+    gap: 2%;
+    margin-top: 70px;
+    padding: 50px 50px 70px 25px;
+    background-color: #F2F2F2;
+}
+
+/* Section */
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 32%;
+}
+
+/* Heading */
+.footer-heading {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16pt;
+}
+
+/* Link */
+.footer-link {
+    padding: 5px;
+    width: fit-content;
+}
+
+/* Hover & focus effect */
+.footer-link:hover,
+.footer-link:focus {
+    color: #0065FC;
+}

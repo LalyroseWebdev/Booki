@@ -1,0 +1,285 @@
+/* Booki Stylesheet (mobile) */
+/* Author Chloé Lalyrose Domergue */
+/* Date 08/2022 */
+
+
+/* ====================
+    Table of Contents
+   ====================
+
+    B- General
+    C- Header
+    D- Title + Search bar
+    E- Filters section
+    F- Housing display
+    G- Most populars
+    H- General housing
+    I- Activities
+    J- Footer
+*/
+
+
+/* =================
+    B- General
+   ================= */
+
+/* Main content display */
+main {
+    padding: 0;
+}
+
+/* Page title */
+h1 {
+    margin-top: 30px;
+    font-size: 22pt;
+}
+
+/* Card radius */
+.card {
+    border-radius: 25px;
+}
+
+/* Left image radius */
+.img-left {
+    border-radius: 25px 0 0 25px;
+}
+
+/* Top image radius */
+.img-top {
+    border-radius: 25px 25px 0 0;
+}
+
+/* Rating stars */
+.card-rating {
+    font-size: 12pt;
+}
+
+
+/* ===============
+    C- Header
+   =============== */
+
+/* Header */
+header {
+    flex-direction: column;
+    padding: 0;
+}
+
+/* Logo */
+.logo {
+    margin: 15px 0 20px 0;
+}
+
+/* Navigation bar */
+nav {
+    width: 100%;
+}
+
+/* Navigation item */
+.nav-item {
+    width: 50%;
+}
+
+/* Navigation link */
+.nav-link {
+    border-bottom: 4px solid #F2F2F2;
+    padding-top: 20px;
+    padding-bottom: 16px;
+}
+
+/* Hover effect */
+.nav-link:hover {
+    border-top: none;
+    border-bottom: 4px solid #0065FC;
+    padding-top: 20px;
+}
+
+/* Focus effect */
+.nav-link:focus {
+    border: none;
+    padding-top: 20px;
+}
+
+/* ================
+    D- Search bar
+   ================ */
+
+/* Search & Filters section */
+.search-filters-section {
+    margin: 0;
+    padding: 0 25px 25px 25px;
+}
+
+/* Search form */
+.search-form {
+    align-self: center;
+    margin: 35px 0;
+    border-radius: 20px;
+    width: 100%;
+}
+
+/* Location dot icon */
+.location-icon {
+    border-radius: 17px 0 0 17px;
+}
+
+/* Input */
+.search-input {
+    flex-grow: 1;
+}
+
+/* Text button */
+.search-btn-text {
+    display: none;
+}
+
+/* Icon button */
+.search-btn-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 17px;
+    width: 60px;
+    font-size: 20px;
+    color: white;
+    background-color: #0065FC;
+    outline: 3px solid #0065FC;
+    outline-offset: -1px;
+}
+
+
+/* ================
+    E- Filters section
+   ================ */
+
+/* Filters section */
+.filters-section {
+    flex-direction: column;
+    align-items: start;
+    margin-left: 0;
+}
+
+/* Filters list */
+.filters-list {
+    gap: 10px;
+    padding-left: 0;
+}
+
+/* Results information line */
+.results-info {
+    margin-left: 0;
+}
+
+
+/* ====================
+    F- Housing display
+   ==================== */
+
+/* Housing */
+.housing-section {
+    gap: 0;
+}
+
+/* Most populars subsection */
+.most-populars-subsection {
+    border-radius: 0;
+    padding: 50px 25px;
+}
+
+/* General housing subsection */
+.general-housing-subsection {
+    border-radius: 0;
+    padding: 50px 25px 25px 25px;
+    background-color: white;
+}
+
+
+/* ====================
+    G- Most populars
+    ==================== */
+
+/* Most populars cards */
+.pop-cards {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Card article */
+.pop-article {
+    width: 100%;
+}
+
+/* Card body */
+.pop-body {
+    padding-left: 15px;
+}
+
+
+/* =================
+    H- General housing
+   ================= */
+
+/* General housing cards */
+.gen-cards {
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Column */
+.gen-block {
+    width: 100%;
+    gap: 15px;
+}
+
+/* Image container */
+.gen-img {
+    height: 150px;
+}
+
+
+/* ===============
+    I- Activities
+   =============== */
+
+/* Activities section */
+.activities-section {
+    margin-top: 0;
+    padding: 50px 25px 25px 25px;
+}
+
+/* Activities cards */
+.act-cards {
+    gap: 25px;
+    height: fit-content;
+}
+
+/* Column */
+.act-column {
+    gap: 25px;
+    width: 100%;
+    height: fit-content;
+}
+
+/* Column inversion */
+.inversion {
+    order: 0;
+}
+
+/* Card */
+.act-card {
+    height: 250px;
+}
+
+
+/* ===============
+    J- Footer
+   =============== */
+
+/* Footer */
+footer {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 40px;
+}

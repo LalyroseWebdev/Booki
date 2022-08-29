@@ -1,0 +1,141 @@
+/* Booki Stylesheet (tablet) */
+/* Author Chloé Lalyrose Domergue */
+/* Date 08/2022 */
+
+
+/* ====================
+    Table of Contents
+   ====================
+
+    C- Header
+    F- Housing display
+    G- Most populars
+    H- General housing
+    I- Activities
+    J- Footer
+*/
+
+
+/* ===============
+    C- Header
+   =============== */
+
+/* Logo */
+.logo {
+    margin-left: 30px;
+}
+
+/* Navigation link */
+.nav-link {
+    padding: 40px 30px;
+}
+
+/* Hover & focus effect */
+.nav-link:hover, 
+.nav-link:focus {
+    padding-top: 37px;
+}
+
+
+/* ====================
+    F- Housing display
+   ==================== */
+
+/* Housing */
+.housing-section {
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Most populars subsection */
+.most-populars-subsection {
+    order: 0;
+    width: 100%;
+}
+
+/* General housing subsection */
+.general-housing-subsection {
+    width: 100%;
+}
+
+
+/* ==================
+    G- Most populars
+   ================== */
+
+/* Most populars cards */
+.pop-cards {
+    flex-direction: row;
+    gap: 4%;
+}
+
+/* Card article */
+.pop-article {
+    width: 32%;
+}
+
+/* Card */
+.pop-card {
+    height: 190px;
+}
+
+/* Card body */
+.pop-body {
+    padding-left: 10px;
+}
+
+
+/* =================
+    H- General housing
+   ================= */
+
+/* General housing cards */
+.gen-cards {
+    flex-direction: row;
+    gap: 4%;
+}
+
+/* Column */
+.gen-block {
+    flex-direction: column;
+    width: 48%;
+    gap: 30px;
+}
+
+/* Article */
+.gen-article {
+    width: 100%;
+}
+
+
+/* ===============
+    I- Activities
+   =============== */
+
+/* Activities cards */
+.act-cards {
+    flex-wrap: wrap;
+    height: 900px;
+}
+
+/* Column */
+.act-column {
+    width: 48%;
+    height: 432px;
+}
+
+/* Column inversion */
+.inversion {
+    order: 1;
+}
+
+
+/* ===============
+    J- Footer
+   =============== */
+
+/* Section */
+.footer-section {
+    width: auto;
+    flex-grow: 1;
+}
